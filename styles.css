@@ -268,4 +268,38 @@ body {
         max-width: 100%;
         margin-top: 20px;
     }
+    .category-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+
+    .category-item {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .featured-product {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+
+    .product-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .shop-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
+
