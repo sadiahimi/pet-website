@@ -25,7 +25,6 @@ body {
     font-size: 18px;
     color: #333;
 }
-
 .nav-icons i {
     cursor: pointer;
 }
@@ -280,6 +279,129 @@ body {
     color: #ff9800;
 }
 
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fef9ec;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px; 
+    z-index: 10;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+}
+
+.newsletter-image img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+.newsletter-content {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.newsletter-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.newsletter-content p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 300px;
+}
+
+.subscribe-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.subscribe-form button {
+    background: #facc15;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background: #eab308;
+}
+
+.newsletter-image img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+.footer {
+    background-color: #fde68a;
+    padding: 60px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    position: relative;
+    margin-top: -30px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+}
+
+.footer p {
+    color: #555;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.social-icons i {
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #eab308;
+}
+
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
@@ -395,6 +517,31 @@ body {
     .product-info {
         flex: 1; 
     }
-}
+    .newsletter {
+        max-width: 90%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-image {
+        order: -1;
+    }
+
+    .newsletter-image img {
+        max-width: 100px;
+    }
+
+    .subscribe-form {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    }
+    
    
 
