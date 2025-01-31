@@ -220,6 +220,65 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.products {
+    display: flex;
+    gap: 15px;
+}
+.product-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+.card1 {
+    background: linear-gradient(to right, #eacaff, #a3c0ff);
+    flex: 1; 
+}
+.card2 {
+    background: linear-gradient(to right, #ffedb3, #ffe4b5);
+    flex: 0.5; 
+}
+.product-card img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-width: 120px;
+}
+.label {
+    font-size: 12px;
+    color: #444;
+}
+.product-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.description {
+    font-size: 14px;
+    color: white;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+.highlight-pricee {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9800;
+}
 
 @media (max-width: 768px) {
     .navbar {
@@ -246,7 +305,6 @@ body {
         text-align: center;
         padding: 40px 20px;
     }
-
     .banner-text {
         max-width: 100%;
     }
@@ -301,5 +359,42 @@ body {
         font-size: 14px;
         padding: 8px 12px;
     }
+    .products {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .product-card {
+        width: 100%;  
+        text-align: center;
+        padding: 20px;
+        display: flex; 
+    }
+
+    .product-card img {
+        max-width: 140px;
+        position: static;
+        display: block;
+        margin: 0 auto;
+        flex-shrink: 0; 
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .highlight-pricee {
+        font-size: 18px;
+    }
+    .description{
+        display: none;
+    }
+    .label{
+        display: none;
+    }
+    .product-info {
+        flex: 1; 
+    }
 }
+   
 
